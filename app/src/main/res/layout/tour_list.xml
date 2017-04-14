@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tour_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-sarif"
+            android:text="Arundhati Mohapatra"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:layout_marginLeft="20dp"
+            android:paddingLeft="12dp"
+            android:id="@+id/text_end_city"
+            android:layout_gravity="center_horizontal" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/text_fcity"
+            android:layout_width="118dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="4dp"
+            android:text="New"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tour_start_date"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/tour_circle" />
+
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:background="@drawable/tour_line" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tour_city"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/tour_circle1" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:background="@drawable/tour_line1" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tour_country"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/tour_circle1" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="70dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_city"
+                android:text="new" />
+
+        </LinearLayout>
+
+</LinearLayout>
+
+</LinearLayout>

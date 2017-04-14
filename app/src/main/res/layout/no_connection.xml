@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E6E6E6"
+    android:weightSum="1"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/networkUnavailable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="{ic-sad 70dp #8C8989}"
+            android:id="@+id/batchIcon"
+            android:textColor="#8C8989"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Can't Connect"
+            android:id="@+id/textView16"
+            android:textColor="#8C8989"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Please swipe top to refresh"
+            android:id="@+id/textView15"
+            android:textColor="#8C8989"/>
+
+
+    </LinearLayout>
+</RelativeLayout>

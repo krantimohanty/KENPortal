@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/row_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="4dp">
+
+        <!--<com.joanzapata.iconify.widget.IconTextView-->
+            <!--android:id="@+id/read_status"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:paddingTop="10dp"-->
+            <!--android:text="{ic-double-check}"-->
+            <!--android:textColor="@color/green"-->
+            <!--android:textSize="20sp"-->
+            <!--android:textStyle="bold"-->
+            <!--android:visibility="gone" />-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@+id/read_status"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/ActionName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="san-serif"
+                android:singleLine="true"
+                android:text="Local visit application by Himalaya Pagada"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/ActionEmpName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ActionName"
+                android:fontFamily="san-serif"
+                android:text="By Himalaya Pagada"
+                android:textAppearance="?android:attr/textAppearance" />
+
+            <TextView
+                android:id="@+id/Actiondays"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ActionEmpName"
+                android:fontFamily="san-serif"
+                android:text="5 Days ago"
+                android:textAppearance="?android:attr/textAppearance" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:height="80dp"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:visibility="gone"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/txt_delete"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:clickable="false"
+                android:gravity="center_vertical"
+                android:hapticFeedbackEnabled="true"
+                android:text="Delete"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/txt_undo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="Undo"
+                android:textColor="@color/yellow" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

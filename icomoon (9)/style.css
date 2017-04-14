@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'icomoon';
+    src:    url('fonts/icomoon.eot?8jmuxs');
+    src:    url('fonts/icomoon.eot?8jmuxs#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?8jmuxs') format('truetype'),
+        url('fonts/icomoon.woff?8jmuxs') format('woff'),
+        url('fonts/icomoon.svg?8jmuxs#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-warning38:before {
+    content: "\e91a";
+}
+.icon-Shape1:before {
+    content: "\e917";
+}
+.icon-Shape2:before {
+    content: "\e918";
+}
+.icon-Shape3:before {
+    content: "\e919";
+}
+.icon-tick4:before {
+    content: "\e916";
+}
+.icon-linkedin23:before {
+    content: "\e913";
+}
+.icon-logo160:before {
+    content: "\e914";
+}
+.icon-logo161:before {
+    content: "\e915";
+}
+.icon-Attandance:before {
+    content: "\e900";
+}
+.icon-Claim:before {
+    content: "\e902";
+}
+.icon-Down:before {
+    content: "\e903";
+}
+.icon-EmployeeDirectory:before {
+    content: "\e904";
+}
+.icon-EmployeeTracking:before {
+    content: "\e905";
+}
+.icon-Gallery:before {
+    content: "\e906";
+}
+.icon-Leave:before {
+    content: "\e907";
+}
+.icon-MeetingSchedule:before {
+    content: "\e908";
+}
+.icon-Menu:before {
+    content: "\e909";
+}
+.icon-Messanger:before {
+    content: "\e90a";
+}
+.icon-Notification:before {
+    content: "\e90b";
+}
+.icon-Password:before {
+    content: "\e90c";
+}
+.icon-SallerySlip:before {
+    content: "\e90d";
+}
+.icon-Settings:before {
+    content: "\e90e";
+}
+.icon-Tour:before {
+    content: "\e912";
+}
+.icon-Username:before {
+    content: "\e90f";
+}
+.icon-Wish:before {
+    content: "\e910";
+}
+.icon-Nosignal:before {
+    content: "\e911";
+}
+.icon-teardrop4:before {
+    content: "\e901";
+}
+

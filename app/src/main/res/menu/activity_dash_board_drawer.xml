@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="Settings" />
+        <item
+            android:id="@+id/change_Pin"
+            android:icon="@drawable/ic_build_black_24dp"
+            android:title="Change Pin" />
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:title="Logout" />
+        <item
+            android:id="@+id/sync_with_portal"
+            android:icon="@drawable/ic_sync_black_24dp"
+            android:title="Sync" />
+        <item
+            android:id="@+id/feedback"
+            android:icon="@drawable/ic_feedback_black_24dp"
+            android:title="Feedback" />
+        <!--<item-->
+            <!--android:id="@+id/rate_app"-->
+            <!--android:icon="@drawable/ic_rate_review_black_24dp"-->
+            <!--android:title="Rate App" />-->
+        <!--<item-->
+            <!--android:id="@+id/app_version"-->
+            <!--android:icon="@drawable/ic_info_outline_black_24dp"-->
+            <!--android:title="@string/app_version" />-->
+    </group>
+
+    <!--  <item android:title="Communicate">
+          <menu>
+              <item
+                  android:id="@+id/nav_share"
+                  android:icon="@android:drawable/ic_menu_share"
+                  android:title="Share" />
+              <item
+                  android:id="@+id/nav_send"
+                  android:icon="@android:drawable/ic_menu_send"
+                  android:title="Send" />
+          </menu>
+      </item>-->
+
+</menu>

@@ -1,0 +1,51 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kenportal.users.fragment.FilterDepartmentWiseFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/department_filter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <LinearLayout
+        android:id="@+id/networkUnavailable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/batchIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="{ic-noconnection 70dp #8C8989}"
+            android:textColor="#8C8989"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Can't Connect"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#8C8989"
+            android:textStyle="bold" />
+
+        <!--<TextView-->
+            <!--android:id="@+id/textView15"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Please swipe top to refresh"-->
+            <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+            <!--android:textColor="#8C8989" />-->
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

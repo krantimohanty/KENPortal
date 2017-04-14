@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?><!--<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:app="http://schemas.android.com/apk/res-auto"--><!--xmlns:tools="http://schemas.android.com/tools"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:fitsSystemWindows="true"--><!--tools:context="csm.com.kwantify.EmployeeDirectoryActivity">-->
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:fitsSystemWindows="true"
+    tools:context="com.kenportal.users.EmployeeDirectoryActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/colorPrimary"
+                    app:layout_scrollFlags="scroll|enterAlways"
+                    app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                </android.support.v7.widget.Toolbar>
+
+                <com.kenportal.users.custom_searchview.SearchBox
+                    android:id="@+id/searchbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="-6dp"
+                    android:layout_marginRight="-6dp"
+                    android:layout_marginTop="-6dp"
+                    android:visibility="gone"
+                    app:layout_scrollFlags="scroll|enterAlways" />
+
+            </FrameLayout>
+
+
+            <!--  <android.support.v7.widget.CardView
+                  android:id="@+id/bubbleLayout"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="3dp"
+                  android:layout_marginLeft="8dp"
+                  android:layout_marginTop="3dp"
+                  android:visibility="gone"
+                  app:cardCornerRadius="2dp"
+                  app:cardElevation="1dp"
+                  app:contentPadding="1dp">
+
+                  <LinearLayout
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:orientation="horizontal"
+                      android:paddingBottom="1dp"
+                      android:paddingLeft="5dp"
+                      android:paddingRight="5dp"
+                      android:paddingTop="1dp">
+
+                      <TextView
+                          android:id="@+id/serchData"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:fontFamily="san-serif"
+                          android:gravity="center"
+                          android:text="Medium Text"
+                          android:textAppearance="?android:attr/textAppearanceSmall"
+                          android:textColor="@color/blue_gray"
+                          android:textStyle="normal" />
+
+                      <com.joanzapata.iconify.widget.IconTextView
+                          android:id="@+id/close_bubble"
+                          android:layout_width="25dp"
+                          android:layout_height="25dp"
+                          android:layout_marginLeft="8dp"
+                          android:clickable="true"
+                          android:fontFamily="san-serif"
+                          android:gravity="center"
+                          android:text="{fa-times #4b636f}"
+                          android:textStyle="normal" />
+
+                  </LinearLayout>
+
+              </android.support.v7.widget.CardView>-->
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="9dp">
+
+            <LinearLayout
+                android:id="@+id/bubbleLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/white_tag"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp">
+
+                <TextView
+                    android:id="@+id/serchData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="san-serif"
+                    android:gravity="center"
+                    android:text="Medium Text"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/blue_gray"
+                    android:textStyle="normal" />
+
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:id="@+id/close_bubble"
+                    android:layout_width="25dp"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:text="{fa-times #4b636f}"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appBar"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/employee_recycle_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:scrollbars="none"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        <com.kenportal.users.widgets.RecyclerViewFastScroller
+            android:id="@+id/fastscroller"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/employee_recycle_list"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/employee_recycle_list" />
+
+        <TextView
+            android:id="@+id/noRecord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="No record found"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <!--</android.support.design.widget.CoordinatorLayout>-->
+</android.support.design.widget.CoordinatorLayout>

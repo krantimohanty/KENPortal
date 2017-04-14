@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="HorizontalListView">
+        <attr name="dividerWidth" format="dimension" />
+        <attr name="android:divider" />
+        <attr name="android:requiresFadingEdge" />
+        <attr name="android:fadingEdgeLength" />
+    </declare-styleable>
+
+    <!--Pin View-->
+    <declare-styleable name="PinLock">
+        <attr name="pinLength" format="integer" />
+        <attr name="backgroundColor" format="color" />
+        <attr name="keypadButtonShape" format="reference" />
+        <attr name="keypadTextColor" format="color" />
+        <attr name="keypadTextSize" format="dimension" />
+        <attr name="keypadWidth" format="dimension" />
+        <attr name="keypadHeight" format="dimension" />
+        <attr name="keypadVerticalSpacing" format="dimension" />
+        <attr name="keypadHorizontalSpacing" format="dimension" />
+        <attr name="keypadClickAnimationDuration" format="integer" />
+        <attr name="cancelForgotTextColor" format="color" />
+        <attr name="cancelForgotTextSize" format="dimension" />
+        <attr name="infoTextColor" format="color" />
+        <attr name="infoTextSize" format="dimension" />
+        <attr name="vibrateOnClick" format="boolean" />
+        <attr name="vibrateDuration" format="integer" />
+        <attr name="statusEmptyBackground" format="reference" />
+        <attr name="statusFilledBackground" format="reference" />
+        <attr name="statusDotDiameter" format="dimension" />
+        <attr name="statusDotSpacing" format="dimension" />
+    </declare-styleable>
+
+
+    <!--Circular Image View-->
+    <declare-styleable name="CircularImageView">
+        <attr name="border" format="boolean" />
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="shadow" format="boolean" />
+        <attr name="shadow_color" format="color" />
+        <attr name="shadow_radius" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="Theme">
+        <attr name="circularImageViewStyle" format="reference" />
+    </declare-styleable>
+
+    <!--SearchView-->
+    <declare-styleable name="MaterialMenuView">
+        <attr name="mm_color" format="color" />
+        <attr name="mm_scale" format="integer" />
+        <attr name="mm_transformDuration" format="integer" />
+        <attr name="mm_pressedDuration" format="integer" />
+        <attr name="mm_strokeWidth" format="integer" />
+        <attr name="mm_rtlEnabled" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="AVLoadingIndicatorView">
+        <attr name="indicator">
+            <flag name="SquareSpin" value="4" />
+        </attr>
+        <attr name="indicator_color" format="color" />
+    </declare-styleable>
+    <!--progrerss bar-->
+    <declare-styleable name="MyTextView">
+        <attr name="fontName" format="string" />
+    </declare-styleable>
+</resources>

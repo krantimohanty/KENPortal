@@ -1,0 +1,47 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_view_detail"
+        android:icon="@drawable/ic_person_outline_black_24dp"
+        android:title="View Detail"
+        app:showAsAction="always|withText" />
+    <item
+        android:id="@+id/action_call"
+        android:icon="@drawable/ic_phonelink_ring_black_24dp"
+        android:title="Call Cell"
+        app:showAsAction="always|withText" />
+    <item
+        android:id="@+id/action_call_office"
+        android:icon="@drawable/ic_call_black_24dp"
+        android:title="Call Office"
+        app:showAsAction="always|withText" />
+    <item
+        android:id="@+id/action_sms"
+        android:icon="@drawable/ic_message_black_24dp"
+        android:title="SMS"
+        app:showAsAction="always|withText" />
+    <item
+        android:id="@+id/action_email"
+        android:icon="@drawable/ic_email_black_24dp"
+        android:title="Email"
+        app:showAsAction="always|withText" />
+    <item
+        android:id="@+id/action_chat"
+        android:icon="@drawable/ic_chat_bubble_black_24dp"
+        android:title="Chat with KW messenger"
+        app:showAsAction="always|withText"/>
+    <item
+        android:id="@+id/action_send_request_for_location"
+        android:icon="@drawable/ic_navigation_black_24dp"
+        android:title="Send request for share location"
+        app:showAsAction="always|withText"
+        android:enabled="false"/>
+    <item
+        android:id="@+id/action_add_to_phn_contct"
+        android:icon="@drawable/ic_contacts_black_24dp"
+        android:title="Add to phone contact"
+        app:showAsAction="always|withText"
+        android:enabled="false"/>
+
+</menu>

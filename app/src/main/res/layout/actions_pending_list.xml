@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp"
+        android:paddingRight="8dp"
+        android:paddingTop="4dp">
+
+        <View
+            android:id="@+id/indicator"
+            android:layout_width="6dp"
+            android:layout_height="match_parent"
+            android:background="@color/yellow" />
+
+        <ImageView
+            android:id="@+id/profile_pic"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/common_action_bar_splitter"
+            android:scaleType="fitXY" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/ActionName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="san-serif"
+                android:singleLine="true"
+                android:text="Meeting Schedule"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/ActionEmpName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ActionName"
+                android:fontFamily="san-serif"
+                android:text="By Dipika"
+                android:textAppearance="?android:attr/textAppearance" />
+
+            <TextView
+                android:id="@+id/Actiondays"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ActionEmpName"
+                android:fontFamily="san-serif"
+                android:text="5 Days ago"
+                android:textAppearance="?android:attr/textAppearance" />
+
+            <com.joanzapata.iconify.widget.IconTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="san-serif"
+                android:text="{md-chevron-right}"
+                android:textSize="18sp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

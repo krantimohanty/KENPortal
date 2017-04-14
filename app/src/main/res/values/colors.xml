@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#3395ff</color>-->
+    <!--<color name="colorPrimaryDark">#2196F3</color>-->
+    <!--<color name="colorAccent">#3395ff</color>-->
+
+    <color name="colorPrimary">#FF00BBBC</color>
+    <color name="colorPrimaryDark">#FF00BBBC</color>
+    <color name="colorAccent">#FF00BBBC</color>
+    <color name="dashboardgradient">#20d2bb</color>
+
+
+    <color name="dark">@color/cardview_dark_background</color>
+
+    <!--<color name="colorPrimary">#ff9800</color>-->
+    <!--<color name="colorPrimaryDark">#FFAF0A</color>-->
+    <!--<color Tab Indicator - Yellow </color>-->
+
+    <color name="yellow">#FFEB3B</color>
+    <color name="green">#4CAF50</color>
+    <color name="blue_gray">#4b636f</color>
+
+    <!--Spring Indicator-->
+    <color name="fastScrollHandleColor">#FFF</color>
+    <color name="fastScrollBarColor">#ffcecece</color>
+    <color name="white">#ffffff</color>
+    <color name="tab_text_color">#F5F5F5</color>
+
+    <!--Menu-->
+    <color name="menu_fragment_background">#B3000000</color>
+    <color name="menu_item_background">#f2f2f2</color>
+    <color name="divider_color">#b5b5b5</color>
+
+    <color name="search_layover_bg">#50000000</color>
+    <color name="gray">#50000000</color>
+    <color name="black">#303030</color>
+
+    <color name="late">#FF5252</color>
+    <color name="meeting">#009688</color>
+    <color name="tour">#2196F3</color>
+    <color name="leave">#ffbf00</color>
+    <color name="training">#ff8000</color>
+    <color name="other">#ff99ff</color>
+
+
+    <color name="bg_screen1">#3395ff</color>
+    <color name="bg_screen2">#20d2bb</color>
+    <color name="bg_screen3">#f64c73</color>
+    <color name="bg_screen4">#c873f4</color>
+
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#2278d4</color>
+    <color name="dot_dark_screen2">#14a895</color>
+    <color name="dot_dark_screen3">#d1395c</color>
+    <color name="dot_dark_screen4">#a854d4</color>
+    <color name="viewBg">#f1f5f8</color>
+    <color name="album_title">#4c4c4c</color>
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#93c6fd</color>
+    <color name="dot_light_screen2">#8cf9eb</color>
+    <color name="dot_light_screen3">#f98da5</color>
+    <color name="dot_light_screen4">#e4b5fc</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
+
+
+    <!--App text dimensions-->
+    <dimen name="text_large_head">16sp</dimen>
+    <dimen name="text_head">14sp</dimen>
+    <dimen name="text_content">13sp</dimen>
+    <dimen name="text_small">12sp</dimen>
+
+
+
+</resources>

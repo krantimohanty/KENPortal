@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.kenportal.users"
+    android:installLocation="auto">
+
+    <uses-sdk tools:overrideLibrary="com.facebook" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission-sdk-23 android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission-sdk-23 android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission-sdk-23 android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission-sdk-23 android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission-sdk-23 android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-permission-sdk-23 android:name="android.permission.VIBRATE" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-permission-sdk-23 android:name="android.permission.CALL_PHONE" />
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <uses-permission-sdk-23 android:name="android.permission.GET_ACCOUNTS" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission-sdk-23 android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <uses-permission-sdk-23 android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:name="com.kenportal.users.network_utils.VolleySingleton"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:hardwareAccelerated="false"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.kenportal.users.DummyActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.LoginScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.kenportal.users.WelcomeActivity"
+            />
+        <activity
+            android:name="com.kenportal.users.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.LoginScreen"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name="com.kenportal.users.MPin"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.PinScreen" />
+        <activity
+            android:name="com.kenportal.users.pinlib.SetPinActivitySample"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.PinScreen" />
+        <activity
+            android:name="com.kenportal.users.pinlib.ConfirmPinActivitySample"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.PinScreen" />
+        <activity
+            android:name="com.kenportal.users.PortalDashboardActivity"
+            android:label="Swash Online"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.LoginScreen" />
+        <activity
+            android:name="com.kenportal.users.EmployeeDirectoryActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_employee_directory"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.EmpDirectoryScreen"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.kenportal.users.EmployeeDirectoryAdavanced"
+            android:label="@string/title_activity_employee_directory"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.EmpDirectoryTabScreen" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBfRJboBpvBmGVbQHTuuYX_xU6gABjl_nSWSH" />
+
+        <activity
+            android:name="com.kenportal.users.MapsActivity"
+            android:label="Colleagues Location"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.MapScreen" />
+        <activity
+            android:name="com.kenportal.users.BestWishActivity"
+            android:label="@string/title_activity_best_wish"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BestWishScreen" />
+        <activity
+            android:name="com.kenportal.users.ActionActivity"
+            android:label="@string/title_activity_action"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.ActionScreen" />
+        <activity
+            android:name="com.kenportal.users.InboxActivity"
+            android:label="@string/title_activity_inbox"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.InboxScreen" />
+        <activity
+            android:name="com.kenportal.users.ViewEmployeeDetail"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.EmpDetailScreen"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.kenportal.users.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.SettngsScreen" />
+        <activity
+            android:name="com.kenportal.users.AllEmployeeActivity"
+            android:label="@string/title_employee"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kenportal.users.WebViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.LoginScreen" />
+        <activity
+            android:name="com.kenportal.users.UpdatesDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.LoginScreen" />
+        <activity
+            android:name="com.kenportal.users.ComingSoon"
+            android:label="Coming Soon"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.LoginScreen" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name="com.kenportal.users.PinActivity" />
+        <activity
+            android:name="com.kenportal.users.FacebookActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.EmpDirectoryScreen" />
+        <activity
+            android:name="com.kenportal.users.WebViewFBActivity"
+            android:label="@string/FBWeb"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.EmpDirectoryTabScreen" />
+        <activity
+            android:name="com.kenportal.users.TwitterActivity"
+            android:label="@string/twitr"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.EmpDirectoryTabScreen" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="74df46b0200bdd336a03536beff031ed6ead4b0c" />
+
+        <meta-data
+            android:name="com.crashlytics.ApiKey"
+            android:value="xxxxxxxx" />
+
+        <activity
+            android:name="com.kenportal.users.AttendanceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.LoginScreen" />
+        <activity
+            android:name="com.kenportal.users.MessangerActivity"
+            android:label="Messaging"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.EmpDirectoryTabScreen" />
+        <activity
+            android:name="com.kenportal.users.AttendanceNewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.LoginScreen" />
+        <activity
+            android:name="com.kenportal.users.SalarySlipActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.LoginScreen" />
+        <activity
+            android:name="com.kenportal.users.TourActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.LoginScreen" />
+        <activity
+            android:name="com.kenportal.users.LeaveAbsenceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.LoginScreen" />
+        <activity
+            android:name="com.kenportal.users.MeetingScheduleActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.LoginScreen"></activity>
+    </application>
+
+</manifest>

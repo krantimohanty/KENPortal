@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/available"
+        android:icon="@drawable/green_dot"
+        android:title="Available"
+        app:showAsAction="always|withText" />
+    <item
+        android:id="@+id/absent"
+        android:icon="@drawable/red_dot"
+        android:title="Absent"
+        app:showAsAction="always|withText" />
+    <item
+        android:id="@+id/meeting"
+        android:icon="@drawable/blue_dot"
+        android:title="In Meeting"
+        app:showAsAction="always|withText" />
+
+</menu>

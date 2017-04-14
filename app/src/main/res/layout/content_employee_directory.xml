@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:fitsSystemWindows="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.kenportal.users.EmployeeDirectoryActivity"
+    tools:showIn="@layout/activity_employee_directory">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp">
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/swipeRefreshLayout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingRight="5dp"
+                android:paddingTop="10dp">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/employee_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="vertical" />
+
+                <!-- <xyz.danoz.recyclerviewfastscroller.vertical.VerticalRecyclerViewFastScroller
+                     android:id="@+id/fast_scroller"
+                     android:layout_width="24dp"
+                     android:layout_height="match_parent"
+                     android:layout_alignParentEnd="true"
+                     android:layout_alignParentRight="true"
+                     android:paddingEnd="@dimen/margin_small"
+                     android:paddingRight="@dimen/margin_small"
+                     recyclerviewfastscroller:rfs_barColor="@color/fastScrollBarColor"
+                     recyclerviewfastscroller:rfs_handleBackground="@drawable/fast_scroller_handle_rounded" />
+
+                 <xyz.danoz.recyclerviewfastscroller.sample.ui.example.ColorGroupSectionTitleIndicator
+                     android:id="@+id/fast_scroller_section_title_indicator"
+                     android:layout_width="wrap_content"
+                     android:layout_height="@dimen/list_item_height"
+                     android:layout_toLeftOf="@id/fast_scroller"
+                     android:layout_toStartOf="@id/fast_scroller"
+                     recyclerviewfastscroller:rfs_backgroundColor="@android:color/white"
+                     recyclerviewfastscroller:rfs_textColor="@android:color/black" />-->
+
+
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+
+            <ScrollView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/side_index"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_rectangle_shape"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" />
+            </ScrollView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

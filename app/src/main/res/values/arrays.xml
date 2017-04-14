@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pop_list">
+        <item>Present</item>
+        <item>Tour</item>
+        <item>Leave</item>
+        <item>Absent</item>
+        <item>Local Visit</item>
+    </string-array>
+
+    <string-array name="year_array">
+        <item>2016</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2015</item>
+    </string-array>
+
+    <string-array name="month_array">
+        <item>July</item>
+        <item>June</item>
+        <item>May</item>
+        <item>April</item>
+        <item>March</item>
+    </string-array>
+
+ <string-array name="mnth_array">
+        <item>jan</item>
+        <item>feb</item>
+        <item>march</item>
+        <item>apr</item>
+        <item>may</item>
+    </string-array>
+
+</resources>

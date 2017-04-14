@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/reltively"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="6dip"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="6dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/itemTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:textSize="14dp"
+            android:text="  Kumar"
+            android:textColor="#444444"
+            android:layout_toLeftOf="@+id/textNew"
+            android:layout_toStartOf="@+id/textNew" />
+
+        <TextView
+            android:id="@+id/textNew"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="0dp"
+            android:layout_alignParentRight="true"
+            android:paddingRight="5dp"
+            android:text="10"/>
+
+        <TextView
+            android:id="@+id/itemSubtitle"
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/itemTitle"
+            android:text="Business Solution  Services"
+            android:layout_toLeftOf="@+id/textNew"
+            android:layout_toStartOf="@+id/textNew"
+            android:textSize="14dp"/>
+        <TextView
+            android:id="@+id/text_purpose"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="Medical Leave"
+            android:layout_alignTop="@+id/itemSubtitle"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>
